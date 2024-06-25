@@ -311,6 +311,10 @@ img {
     visibility: visible;
 }
 
+.login__col-1 .lottie-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .login__col-1 {
         width: 100% !important;
@@ -319,11 +323,20 @@ img {
         padding: 0px;
     }
 
+    .login__col-1 .title {
+        margin-bottom: 10px;
+    }
+
+    .login__col-1 .lottie-mobile {
+        width: 100%;
+        display: inline-block;
+    }
+
     .login__col-2 {
         display: none;
     }
 }
 
-.body-login lottie-player {
+.body-login .lottie-up-mobile {
     width: 80%;
 }

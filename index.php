@@ -14,6 +14,7 @@ if (isset($_GET['pesan'])) {
 ?>
 
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -27,19 +28,22 @@ if (isset($_GET['pesan'])) {
 
 <body class="body-login">
     <div class="login__col-2">
-        <lottie-player src="./assets/lottie/Animation - 1719206264737.json" background="transparent" speed="1" class="login__lottie-player" direction="1" mode="normal" loop autoplay></lottie-player>
+        <lottie-player src="./assets/lottie/Animation - 1719206264737.json" background="transparent" speed="1" class="login__lottie-player" direction="1" mode="normal" loop autoplay class="lottie-up-mobile"></lottie-player>
     </div>
     <div class="login__col-1">
         <h1 class="title">INVENTORY</h1>
+        <div class="lottie-mobile">
+            <lottie-player src="./assets/lottie/Animation - 1719206264737.json" background="transparent" speed="1" class="login__lottie-player" direction="1" mode="normal" loop autoplay></lottie-player>
+        </div>
         <p>Masuk Akun</p>
         <h1 class="welcome">WELCOME TO <br>INVENTORY</h1>
         <form action="login_proses.php" method="post" name="login" id="login">
             <div class="login__input">
-            <label for="username">Username</label>
+                <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="Username">
             </div>
             <div class="login__input">
-            <label for="password">Password</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password">
             </div>
             <button type="submit" name="login">Continue</button>
