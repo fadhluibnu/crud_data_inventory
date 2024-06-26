@@ -1,102 +1,246 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-h2{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* h2 {
     font-family: 'Poppins', sans-serif;
     color: #000;
     margin-top: 3%;
     font-size: 30px;
 }
-h5{
-    color: #1f6d59; 
+
+h5 {
+    color: #1f6d59;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-top: -20px;
 }
-lottie-player{
+
+lottie-player {
     margin-top: -20px;
     margin-bottom: -35px;
 }
-.glass{
+
+.glass {
     padding-top: 25px;
     padding-bottom: 15px;
     width: 470px;
-    background: rgba( 0, 152, 121, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
+    background: rgba(0, 152, 121, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-button{
-    font-family: 'Poppins', sans-serif;
-    border-radius: 25px;
-    background: #fff;
-    color:#000;
-    border:none;
-    height:30px;
-    width: auto;
-    position: relative;
-    font-size:14px;
-    padding:0 2em;
-    cursor:pointer;
-    transition:400ms ease all;
-    outline:none;
-    margin: 0px 10px;
-}
-button:hover{
-    background:#2ed691;
-    color:#fff;
-    border-radius: 0px;
-}
-button:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #f4ff5e;
-    transition:400ms ease all;
-}
-button:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-}
-button:hover:before,button:hover:after{
-    width:100%;
-    transition:800ms ease all;
-}
-form table{
-    font-family: 'Poppins', sans-serif;
-    padding: 15px;
-    background: rgba( 255, 255, 255, 0.75 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 11px );
-    -webkit-backdrop-filter: blur( 11px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#simpan{
+button {
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     background: #fff;
-    color:#000;
-    border:none;
-    height:30px;
+    color: #000;
+    border: none;
+    height: 30px;
     width: auto;
     position: relative;
-    font-size:14px;
-    padding:0 2em;
-    cursor:pointer;
-    transition:400ms ease all;
-    outline:none;
+    font-size: 14px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 400ms ease all;
+    outline: none;
+    margin: 0px 10px;
+}
+
+button:hover {
+    background: #2ed691;
+    color: #fff;
+    border-radius: 0px;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f4ff5e;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+form table {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#simpan {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    background: #fff;
+    color: #000;
+    border: none;
+    height: 30px;
+    width: auto;
+    position: relative;
+    font-size: 14px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 400ms ease all;
+    outline: none;
     margin-left: 125px;
     margin-top: 15px;
 }
-#simpan:hover{
-    background:#2ed691;
-    color:#fff;
+
+#simpan:hover {
+    background: #2ed691;
+    color: #fff;
     border-radius: 0px;
+} */
+
+.body-form {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.body-form .form__col-1,
+.body-form .form__col-2 {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.form__col-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px 0px 80px;
+    box-sizing: border-box;
+}
+
+
+.form__col-1 .title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #050415;
+    font-family: "Unbounded", sans-serif;
+    margin: 0 0 80px 0;
+}
+
+.form__col-1 p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3485fd;
+    font-family: "Inter", sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.form__col-1 .welcome {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #050415;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.form__col-1 .lottie-mobile {
+    display: none;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__input label {
+    color: #050415;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.form__input input, .form__input select {
+    padding: 20px 24px;
+    border-radius: 14px;
+    outline: 0;
+    border: 2px solid #b9b9c7;
+    font-size: 0.9rem;
+}
+
+.form__col-1 button {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    background-color: #3485FD;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form__col-2 {
+    background-color: #010811;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    .form__col-1 .title {
+      margin-bottom: 10px;
+    }
+    .form__col-1 {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .form__col-1 .lottie-mobile{
+      width: 100%;
+      display: inline-block;
+    }
+    .form__col-2 {
+      display: none;
+    }
+  }
+
+.body-form .lottie-up-mobile {
+    width: 80%;
 }
