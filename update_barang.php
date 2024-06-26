@@ -9,7 +9,7 @@ $lokasi_file = $_FILES['fupload']['tmp_name'];
 $nama_file = $_FILES['fupload']['name'];
 
 if (empty($lokasi_file)){
-    mysqli_query($koneksi, "UPDATE barang SET 
+    mysqli_query($konek, "UPDATE barang SET 
     namabrg='$_POST[barang]',
     brand='$_POST[brand]', 
     kategori='$_POST[kategori]', 
@@ -19,7 +19,7 @@ if (empty($lokasi_file)){
 }
 else{
     move_uploaded_file($lokasi_file, "gambar/$nama_file");
-    mysqli_query($koneksi, "UPDATE barang SET 
+    mysqli_query($konek, "UPDATE barang SET 
     namabrg='$_POST[barang]',
     brand='$_POST[brand]', 
     kategori='$_POST[kategori]', 

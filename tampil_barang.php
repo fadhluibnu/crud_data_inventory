@@ -53,7 +53,7 @@ if (isset($_POST['cari'])) {
                     <?php foreach ($barang as $row) { ?>
                         <tr class="isi">
                             <td align="center"><?= $i; ?></td>
-                            <td align="left"><?= $row['namabrg']; ?></td>
+                            <td align="left"><?= $row['namaBrg']; ?></td>
                             <td align="left"><?= $row['brand']; ?></td>
                             <td align="left"><?= $row['kategori']; ?></td>
                             <td align="left"><?= $row['jumlah']; ?></td>
@@ -62,7 +62,7 @@ if (isset($_POST['cari'])) {
                                 <img src="gambar/<?= $row['gambar']; ?>" width="70" height="70">
                             </td>
                             <td align="center">
-                                <a style="text-decoration: none;" href="edit_barang.php?id<?php echo $row['idbarang']; ?>">Edit</a>
+                                <a style="text-decoration: none;" href="./edit_barang.php?id=<?php echo $row['idBarang']; ?>">Edit</a>
                             </td>
                             <br><br>
                             <a href="hapus_barang.php?id=<?php echo $row['idbarang']; ?>" style="text-decoration: none;" onclick="return confirm('yakin ingin menghapus data ini ?')">Hapus</a>
