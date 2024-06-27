@@ -12,8 +12,8 @@ function query($sql)
     $rows = [];
     while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
-        return $rows;
     }
+    return $rows;
 }
 function hapus($id)
 {
@@ -24,9 +24,9 @@ function hapus($id)
 
 function cari($keyword)
 {
-    $query = "SELECT FROM barang
+    $query = "SELECT * FROM barang
     WHERE
-    namabrg LIKE '%$keyword%'OR
+    namaBrg LIKE '%$keyword%'OR
     brand LIKE '%$keyword%' OR
     kategori LIKE '%$keyword%' OR
     jumlah LIKE '%$keyword%' OR

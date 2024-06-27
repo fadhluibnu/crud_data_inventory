@@ -1,4 +1,10 @@
-.styled-table {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+/* .styled-table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -24,10 +30,10 @@
 
 .styled-table tr:last-of-type {
     border-bottom: 5px solid #009879;
-}
+} */
 
 /* Button */
-button{
+/* button{
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     background: #009879;
@@ -85,4 +91,177 @@ h2 {
     color: #1f6d59;
     margin-top: 25px;
     font-size: 35px;
+} */
+
+.body-tampil {
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #050415;
+  font-family: "Unbounded", sans-serif;
+  margin: 0 0 80px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #050415;
+  font-family: "Inter", sans-serif;
+  margin: 0 0 40px 0;
+}
+
+.box-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  background-color: #3485FD;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-edit {
+  background: orange;
+  color: black;
+}
+
+.btn-delete {
+  background: red;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 14px;
+  outline: 0;
+  border: 2px solid #b9b9c7;
+  font-size: 0.9rem;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px 5px 77px -26px #888888;
+}
+
+table * {
+  position: relative
+}
+
+table td,
+table th {
+  padding-left: 8px
+}
+
+table thead tr {
+  height: 60px;
+  background: #36304a
+}
+
+table tbody tr {
+  height: 50px
+}
+
+table tbody tr:last-child {
+  border: 0
+}
+
+table td,
+table th {
+  text-align: left
+}
+
+table td.l,
+table th.l {
+  text-align: right
+}
+
+table td.c,
+table th.c {
+  text-align: center
+}
+
+table td.r,
+table th.r {
+  text-align: center
+}
+
+.table100-head th {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5
+}
+
+tbody tr {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: gray;
+  line-height: 1.2;
+  font-weight: unset
+}
+
+tbody tr:hover {
+  color: #555;
+  background-color: #f5f5f5;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .body-tampil {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .box-nav {
+    flex-direction: column;
+  }
+  .table-mobile {
+    width: 100%;
+    overflow-x: auto;
+  }
+  table{
+    width: auto;
+    white-space: nowrap;
+  }
 }
